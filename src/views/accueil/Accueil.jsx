@@ -1,10 +1,14 @@
 import React from 'react';
+import Banner from '../../components/banner/Banner';
+import banner from '../../assets/accueil_img.png'
 
-class Accueil extends React.Component {
+const bannerText = "Chez vous, Partout et ailleurs"
+
+class Accueil extends React.Component  {
     render() {
         return (
             <div>
-                vous êtes sur la page Accueil
+                <Banner img={banner} text={bannerText}/>
             </div>
         )
     }
