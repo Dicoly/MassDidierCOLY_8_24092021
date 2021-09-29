@@ -1,0 +1,36 @@
+.error {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.errorType {
+    color: #FF6060;
+    font-size: 96px;
+    margin: 0;
+}
+
+.errorMessage {
+    color: #FF6060;
+    font-size: 18px;
+    margin: 0;
+}
+
+.backHome {
+    color: #FF6060;
+    font-size: 14px;
+    margin-top: 100px;
+}
+
+@media (min-width: 768px) {
+    .errorType {
+        font-size: 288px;
+    }
+    .errorMessage {
+        font-size: 36px;
+    }
+    .backHome {
+        font-size: 18px;
+    }
+}
