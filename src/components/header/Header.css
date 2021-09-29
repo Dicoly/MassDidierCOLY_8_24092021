@@ -1,0 +1,22 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navLink {
+    margin-left: 20px;
+    color : #FF6060;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.navLink:hover {
+    text-decoration: underline;
+}
+
+@media screen and (min-width: 768px){
+    .kasaLogo{
+        width: 145px;
+    }
+}
