@@ -1,8 +1,7 @@
 .bannerContainer {
     display: flex;
     justify-content: center;
-    margin-top: 20px;
-    margin-bottom: 40px;
+    margin: 20px 0 40px 0;
     position: relative;
     background-color: black;
     border-radius: 10px;
