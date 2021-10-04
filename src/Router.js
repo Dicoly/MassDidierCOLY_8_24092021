@@ -2,7 +2,7 @@ import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 import About from './views/about/About';
 import Error from './views/error/Error';
-import Accueil from './views/accueil/Accueil'
+import Accueil from './views/accueil/Accueil';
 
 
 class Router extends React.Component {
