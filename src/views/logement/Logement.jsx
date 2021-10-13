@@ -3,6 +3,8 @@ import { Redirect } from 'react-router';
 import Carousel from '../../components/carousel/Carousel';
 import './Logement.css'
 import Tag from '../../components/tag/Tag';
+import Host from '../../components/host/Host';
+import Rating from '../../components/rating/Rating';
 
 
 const logementList = require('../../datas/dataLogements.json')
@@ -36,6 +38,10 @@ class Logement extends React.Component {
                         <h3 className='logementLocation'>{this.state.logement.location}</h3>
                         <Tag list={this.state.logement.tags} />
                     </section>
+                    <div className="kasa-host-rating-container mr-top-1r">
+                        <Host name={this.state.logement.host.name} picture={this.state.logement.host.picture}/>
+                        <Rating rating={this.state.logement.rating}/>
+                    </div>
                 </section>
             </main>
         ) : (

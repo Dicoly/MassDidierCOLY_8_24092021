@@ -1,0 +1,13 @@
+.star {
+    width: 30px;
+    height: 30px;
+    padding: 1px;
+}
+
+.starContainer {
+    display: flex;
+    align-items: center;
+    float  :left;
+    height : 2rem;
+    top: 3px;
+}
