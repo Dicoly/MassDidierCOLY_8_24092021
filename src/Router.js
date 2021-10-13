@@ -3,6 +3,7 @@ import { Switch, Route } from 'react-router-dom';
 import About from './views/about/About';
 import Error from './views/error/Error';
 import Accueil from './views/accueil/Accueil';
+import Logement from './views/logement/Logement';
 
 
 class Router extends React.Component {
@@ -11,6 +12,11 @@ class Router extends React.Component {
             {
                 path: '/',
                 component: Accueil,
+                exact: true
+            },
+            {
+                path: '/logement/:id',
+                component: Logement,
                 exact: true
             },
             {

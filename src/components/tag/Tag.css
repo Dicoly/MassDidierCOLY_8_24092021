@@ -1,0 +1,25 @@
+.tagContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%
+}
+
+
+.tags {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 84px;
+    border-radius: 5px;
+    height : 18px;
+    background-color: #FF6060;
+    color: white;
+    font-size: .62rem;
+    padding : 0 10px;
+    margin-right: .62rem;
+    margin-bottom: .62rem;
+}
+
+
