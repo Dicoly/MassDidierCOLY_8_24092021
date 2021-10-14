@@ -1,0 +1,26 @@
+.dropdownBody {
+    width: 100%;
+    margin: 15px 15px;
+}
+
+.dropdownTitle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #FF6060;
+    color: white;
+    border-radius: 10px;
+    height: 52px;
+    padding: 0px 20px;
+}
+
+.dropdownContent {
+    border-radius: 10px;
+    background-color: #F6F6F6;
+    color : #FF6060;
+    font-size: 16px;
+    padding: 30px 20px;
+    font-weight: 400;
+    white-space: pre-line;
+    line-height: 27px;
+}

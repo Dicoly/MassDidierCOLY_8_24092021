@@ -5,6 +5,7 @@ import './Logement.css'
 import Tag from '../../components/tag/Tag';
 import Host from '../../components/host/Host';
 import Rating from '../../components/rating/Rating';
+import Dropdown from '../../components/dropdown/Dropdown';
 
 
 const logementList = require('../../datas/dataLogements.json')
@@ -38,11 +39,22 @@ class Logement extends React.Component {
                         <h3 className='logementLocation'>{this.state.logement.location}</h3>
                         <Tag list={this.state.logement.tags} />
                     </section>
-                    <div className="kasa-host-rating-container mr-top-1r">
+                    <aside className="kasa-host-rating-container mr-top-1r">
                         <Host name={this.state.logement.host.name} picture={this.state.logement.host.picture}/>
                         <Rating rating={this.state.logement.rating}/>
-                    </div>
+                    </aside>
                 </section>
+                <article className="dropdownLogement">
+                    <section className="dropdownElement">
+                        <Dropdown title={'Description'} content={this.state.logement.description} />
+                    </section>
+                    <section className="dropdownElement">
+                        <Dropdown
+                            title={'Equipements'}
+                            content={this.state.logement.equipments.join('\n')}
+                        />
+                    </section>
+                </article>
             </main>
         ) : (
             this.state.logement === undefined && <Redirect to="/error" />

@@ -7,20 +7,39 @@
 }
 
 .logementLocation{
-    font-size: 18px;
-    font-weight: 500;
-    margin-bottom: 10px;
-    color:#ff6060; 
-  }
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  color:#ff6060; 
+}
 
 @media screen and (min-width: 768px){
-
+  
   .logementHeader{
     display: flex;
     justify-content: space-between;
   }
-
+  
   .logementInfo{
     flex: 2;
   }
+  .dropdownLogement {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .dropdownElement {
+    display: block;
+    width: 100%;
+  }
+}
+
+.dropdownElement {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.dropdownLogement {
+  width: 100%;
 }
