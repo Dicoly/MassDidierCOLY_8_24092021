@@ -12,6 +12,8 @@
     border-radius: 10px;
     height: 52px;
     padding: 0px 20px;
+    font-weight: 500;
+    font-size: 18px;
 }
 
 .dropdownContent {

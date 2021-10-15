@@ -1,0 +1,19 @@
+.bannerAbout{
+    height: 223px;
+}
+
+@media screen and (min-width: 768px){
+    
+    .aboutDropdownContainer{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin: 0 auto auto auto;
+    }
+}
+
+@media screen and (min-width: 1000px){
+    .aboutLayout{
+        height: 100vh;
+    }
+}
