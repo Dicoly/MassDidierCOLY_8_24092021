@@ -21,10 +21,12 @@ class Logement extends React.Component {
     }
 
     componentDidMount() {
-        this.setState({
-            logement: logementList.find((logement) => logement.id === this.props.match.params.id),
-            isLoading: false
-        });
+        //window.setTimeout( () => {
+            this.setState({
+                logement: logementList.find((logement) => logement.id === this.props.match.params.id),
+                isLoading: false
+            })
+       // },7000);
     }
 
     render() {
@@ -39,7 +41,7 @@ class Logement extends React.Component {
                         <h3 className='logementLocation'>{this.state.logement.location}</h3>
                         <Tag list={this.state.logement.tags} />
                     </section>
-                    <aside className="kasa-host-rating-container mr-top-1r">
+                    <aside className="hostRatingCcontainer">
                         <Host name={this.state.logement.host.name} picture={this.state.logement.host.picture}/>
                         <Rating rating={this.state.logement.rating}/>
                     </aside>

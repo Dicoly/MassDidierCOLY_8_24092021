@@ -1,6 +1,6 @@
 import React from 'react';
 import Banner from '../../components/banner/Banner';
-import banner from '../../assets/aboutImg.png'
+import bannerImg from '../../assets/aboutImg.png'
 import Dropdown from '../../components/dropdown/Dropdown';
 import './About.css'
 
@@ -9,7 +9,7 @@ class About extends React.Component {
     render() {
         return (
             <div className="aboutLayout">  
-                <Banner className="bannerAbout" img={banner} />
+                <Banner className="bannerAbout" img={bannerImg} />
                 <section className="aboutDropdownContainer">  
                     <Dropdown title={'Fiabilité'}
                         content={

@@ -5,18 +5,35 @@ header {
 }
 
 .navLink {
-    margin-left: 20px;
+    /*margin-left: 20px;*/
     color : #FF6060;
     cursor: pointer;
     text-decoration: none;
+    padding-right: 8px;
 }
 
 .navLink:hover {
     text-decoration: underline;
 }
 
+.kasaLogo{
+    width: 175px;
+}
+
+.kasaLogo img{
+    width: 75%;
+}
+
 @media screen and (min-width: 768px){
     .kasaLogo{
-        width: 145px;
+        width: 210px;
+    }
+    .kasaLogo img{
+        width: 100%;
+    }
+    .navLink {
+        padding-right: 25px;
+        font-size: 24px;
+        font-weight: 500;
     }
 }

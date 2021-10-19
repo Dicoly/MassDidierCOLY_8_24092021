@@ -15,7 +15,7 @@ class Header extends React.Component {
                         Accueil
                     </Link>
                     <Link to="/about" className="navLink">
-                        A propos
+                        A Propos
                     </Link>
                 </nav>
             </header>

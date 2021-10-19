@@ -6,12 +6,13 @@ import arrowUp from '../../assets//arrowUp.svg';
 class Dropdown extends React.Component {
     constructor(props) {
         super(props);
-        this.handleClick = this.handleClick.bind(this);
+       // this.handleClick = this.handleClick.bind(this);
         this.state = { open: false };
     }
 
-    handleClick() {
-        this.setState((prevState) => ({
+    handleClick = () => { 
+        //Permet d'ouvrir ou de fermer le dropdown
+        this.setState((prevState) => ({ 
             open: !prevState.open
         }));
     }

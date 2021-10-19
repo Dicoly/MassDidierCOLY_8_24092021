@@ -1,6 +1,6 @@
 import React from 'react';
 import Banner from '../../components/banner/Banner';
-import banner from '../../assets/accueil_img.png'
+import bannerImg from '../../assets/accueil_img.png'
 import Card from '../../components/card/Card'
 import './Accueil.css';
 
@@ -12,7 +12,7 @@ class Accueil extends React.Component  {
     render() {
         return (
             <div>
-                <Banner img={banner} text={bannerText}/>
+                <Banner img={bannerImg} text={bannerText}/>
                 <ul className='kasa-card-container'>
                     {logementList.map((logement)=>
                     <li key={logement.id} className='kasa-card-list'>

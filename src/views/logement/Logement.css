@@ -13,6 +13,12 @@
   color:#ff6060; 
 }
 
+.hostRatingCcontainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 @media screen and (min-width: 768px){
   
   .logementHeader{
@@ -31,6 +37,9 @@
   .dropdownElement {
     display: block;
     width: 100%;
+  }
+  .hostRatingCcontainer {
+    display: block;
   }
 }
 
