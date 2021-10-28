@@ -33,26 +33,29 @@ class Carousel extends React.Component {
                     src={this.props.pictures[this.state.index]}
                     alt="cover"
                 />
-
-                <img
-                    className="carouselPrev"
-                    id={'previousArrow'}
-                    src={previousArrow}
-                    onClick={this.handleClick}
-                    alt="previousArrow"
-                />
+                {this.props.pictures.length !== 1 && (
+                    <img
+                        className="carouselPrev"
+                        id={'previousArrow'}
+                        src={previousArrow}
+                        onClick={this.handleClick}
+                        alt="previousArrow"
+                    />
+                )}
 
                 <div className="carouselValue">
                     {this.state.index + 1}/{this.props.pictures.length}
                 </div>
 
-                <img
-                    className="carouselNext"
-                    id={'nextArrow'}
-                    src={nextArrow}
-                    onClick={this.handleClick}
-                    alt="nextArrow"
-                />
+                {this.props.pictures.length !== 1 &&(
+                    <img
+                        className="carouselNext"
+                        id={'nextArrow'}
+                        src={nextArrow}
+                        onClick={this.handleClick}
+                        alt="nextArrow"
+                    />
+                )}
             </div>
         );
     }
